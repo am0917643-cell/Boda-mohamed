@@ -2,11 +2,11 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحتي الشخصية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <style>
-        * {
+            * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -22,12 +22,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 15px;
         }
 
         a { text-decoration: none; }
 
         .card {
             width: 360px;
+            max-width: 100%;
             padding: 30px;
             border-radius: 25px;
             background: rgba(255, 255, 255, 0.07);
@@ -81,38 +83,38 @@
             border-radius: 50%;
         }
 
-        /* ===== Glow حسب لون كل تطبيق ===== */
+        /* Glow حسب لون كل تطبيق */
+        .fb:hover { background: #1877f2; box-shadow: 0 0 18px #1877f2; }
+        .ig:hover { background: #d6249f; box-shadow: 0 0 18px #d6249f; }
+        .wa:hover { background: #25d366; box-shadow: 0 0 18px #25d366; }
+        .sc:hover { background: #fffc00; color: #000; box-shadow: 0 0 18px #fffc00; }
+        .ph:hover { background: #00aaff; box-shadow: 0 0 18px #00aaff; }
+        .instapay:hover { background: #7a00ff; box-shadow: 0 0 18px #7a00ff; }
 
-        .fb:hover {
-            background: #1877f2;
-            box-shadow: 0 0 18px #1877f2;
-        }
-
-        .ig:hover {
-            background: #d6249f;
-            box-shadow: 0 0 18px #d6249f;
-        }
-
-        .wa:hover {
-            background: #25d366;
-            box-shadow: 0 0 18px #25d366;
-        }
-
-        .sc:hover {
-            background: #fffc00;
-            color: #000;
-            box-shadow: 0 0 18px #fffc00;
-        }
-
-        .ph:hover {
-            background: #00aaff;
-            box-shadow: 0 0 18px #00aaff;
-        }
-
-        /* Glow للـ InstaPay */
-        .instapay:hover {
-            background: #7a00ff;
-            box-shadow: 0 0 18px #7a00ff;
+        /* ======== Media Queries ======== */
+        @media (max-width: 400px) {
+            .card {
+                padding: 20px;
+            }
+            .card img.profile {
+                width: 120px;
+                height: 120px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            .icon-btn {
+                width: 70px;
+                height: 70px;
+                font-size: 28px;
+            }
+            .icon-btn img {
+                width: 40px;
+                height: 40px;
+            }
+            .icon-grid {
+                gap: 15px;
+            }
         }
 
     </style>
