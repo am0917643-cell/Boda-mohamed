@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحتي الشخصية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: #0f0f0f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a { text-decoration: none; }
+
+        .card {
+            width: 360px;
+            padding: 30px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        .card img.profile {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.9);
+        }
+
+        h2 {
+            color: #fff;
+            margin: 20px 0;
+            font-size: 25px;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .icon-btn {
+            width: 90px;
+            height: 90px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+            color: white;
+            transition: 0.35s;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.2);
+            margin: auto;
+        }
+
+        .icon-btn img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        /* ===== Glow حسب لون كل تطبيق ===== */
+
+        .fb:hover {
+            background: #1877f2;
+            box-shadow: 0 0 18px #1877f2;
+        }
+
+        .ig:hover {
+            background: #d6249f;
+            box-shadow: 0 0 18px #d6249f;
+        }
+
+        .wa:hover {
+            background: #25d366;
+            box-shadow: 0 0 18px #25d366;
+        }
+
+        .sc:hover {
+            background: #fffc00;
+            color: #000;
+            box-shadow: 0 0 18px #fffc00;
+        }
+
+        .ph:hover {
+            background: #00aaff;
+            box-shadow: 0 0 18px #00aaff;
+        }
+
+        /* Glow للـ InstaPay */
+        .instapay:hover {
+            background: #7a00ff;
+            box-shadow: 0 0 18px #7a00ff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <img src="Boda.jpeg" alt="profile" class="profile">
+    <h2>Boda Mohamed</h2>
+
+    <div class="icon-grid">
+        <a href="https://www.facebook.com/share/199xT2KkNo/?mibextid=wwXIfr" class="icon-btn fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/boda_elsayed_x9?igsh=MW90amYyMnB6aXJiZg%3D%3D&utm_source=qr" class="icon-btn ig"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://wa.me/201044508164" class="icon-btn wa"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://snapchat.com/t/z5MBnvZB" class="icon-btn sc"><i class="fab fa-snapchat"></i></a>
+
+        <a href="#tel:+201014944593" class="icon-btn ph"><i class="fas fa-phone"></i></a>
+
+        <!-- هنا جوّا الدايرة لوجو InstaPay -->
+        <a href="https://ipn.eg/S/abdallah2967/instapay/6Bi7yZ" class="icon-btn instapay">
+            <img src="InstaPay-Logo-removebg-preview white.png" alt="InstaPay">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
